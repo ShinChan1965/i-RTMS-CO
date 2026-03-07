@@ -110,7 +110,9 @@ def main():
                 detection_frame = frame
 
 
-
+            # YOLO DETECTION
+            # detections = yolo.detect(detection_frame)
+                            # or
             # Decide whether to run YOLO this frame (frame skipping)
             frame_count += 1
             run_detection = (FRAME_SKIP <= 1) or (frame_count % FRAME_SKIP == 0)
